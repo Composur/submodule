@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import RouteMap from './route'
+import RouteMap from "./route";
 
 Vue.use(VueRouter);
 
@@ -21,19 +21,23 @@ const routes = [
   // }
   {
     path: "/",
-    name: "Home",
+    name: "Home"
   },
   {
     path: "/about",
-    name: "About",
+    name: "About"
   },
   {
     path: "/nav",
-    name: "Nav",
+    name: "Nav"
   },
+  {
+    path: "/dialog",
+    name: "Dialog"
+  }
 ];
 routes.forEach(element => {
-  element.component = RouteMap[element.name]
+  element.component = RouteMap[element.name];
 });
 
 const router = new VueRouter({

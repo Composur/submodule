@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <div>
-      <router-link to="/nav">导航条</router-link>
+      <ol>
+        <li><router-link to="/nav">Nav</router-link></li>
+        <li><router-link to="/dialog">Dialog</router-link></li>
+      </ol>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import Nav from "@/components/Nav.vue";
-
 export default {
   name: "Home"
 };
@@ -19,7 +19,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  div{
+  div {
     margin: 20px;
   }
 }
